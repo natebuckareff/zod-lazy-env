@@ -1,0 +1,37 @@
+{
+    "name": "zod-lazy-env",
+    "version": "0.1.0",
+    "description": "Lazily parse environment variables using zod.",
+    "author": "Nate Buckareff",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/natebuckareff/zod-lazy-env"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=8.0.0"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "typeck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@tsconfig/esm": "^1.0.3",
+        "@tsconfig/node18": "^2.0.1",
+        "@tsconfig/strictest": "^2.0.1",
+        "@types/node": "^20.3.1",
+        "typescript": "^5.1.3",
+        "zod": "^3.21.4"
+    },
+    "peerDependencies": {
+        "zod": "^3.21.4"
+    }
+}
